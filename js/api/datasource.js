@@ -70,3 +70,4 @@ export async function getAllUsersMerged() {
   const del = new Set(deleted);
   return [...remote.filter(u => !del.has(u.id)), ...local];
 }
+// ensure cache + remote merge works
